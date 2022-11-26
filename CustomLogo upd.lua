@@ -15,7 +15,7 @@ function main()
     while not isSampAvailable() do
         wait(0)
     end
-		
+
 		adress,  port = sampGetCurrentServerAddress()
 		server = string.format('%s:%s', adress, port)
 		sampAddChatMessage("{CC8C51}[Custom Logos] {d5dedd}Скрипт активирован. Автор: {CC8C51}hijuce.{d5dedd} Дополнил: {CC8C51}ClementoSalkon ", 0x01A0E9)
@@ -230,7 +230,7 @@ function LoadImage()
 		wait(5)
 		if not doesFileExist(getWorkingDirectory() .. '/resource/CustomLogos/img/'..tostring(servers[i])..'.png') then
 			local url = 'https://raw.githubusercontent.com/SalkonKlema/arzico/main/'..tostring(servers[i])..'.png'
-			download_id = downloadUrlToFile(url, getWorkingDirectory() .. '/resource/CustomLogos/img/'..tostring(servers[i])..'.png', download_handler)
+			download_id = downloadUrlToFile(url, getWorkingDirectory() .. '/resource/CustomLogos/img/ico/'..tostring(servers[i])..'.png', download_handler)
 		end
 	end
 end
