@@ -229,8 +229,8 @@ function LoadImage()
 	for i = 1, 23 do
 		wait(5)
 		if not doesFileExist(getWorkingDirectory() .. '/resource/CustomLogos/img/'..tostring(servers[i])..'.png') then
-			local url = 'https://raw.githubusercontent.com/SalkonKlema/arzico/main/'..tostring(servers[i])..'.png'
-			download_id = downloadUrlToFile(url, getWorkingDirectory() .. '/resource/CustomLogos/img/ico/'..tostring(servers[i])..'.png', download_handler)
+			local url = 'https://raw.githubusercontent.com/SalkonKlema/arzico/main/ico/'..tostring(servers[i])..'.png'
+			download_id = downloadUrlToFile(url, getWorkingDirectory() .. '/resource/CustomLogos/img/'..tostring(servers[i])..'.png', download_handler)
 		end
 	end
 end
